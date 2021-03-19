@@ -3,6 +3,20 @@ name = "kt-taxa"
 version = "0.1.0"
 description = "Calcula a taxa da venda coberta"
 authors = ["Valmir Franca <vfranca3@gmail.com>"]
+license = "GPL-2.0-only"
+readme = "README.md"
+repository = "https://github.com/vfranca/kt-taxa"
+keywords = ["cli", "trading", "opções", "derivativos", "taxa", "bolsa de valores"]
+classifiers = [
+"Development Status :: 2 - Pre-Alpha",
+"Environment :: Console",
+"Intended Audience :: Financial and Insurance Industry",
+"License :: OSI Approved :: GNU General Public License (GPL)",
+"Natural Language :: Portuguese (Brazilian)",
+"Programming Language :: Python :: 3.8",
+"Topic :: Adaptive Technologies",
+"Topic :: Office/Business :: Financial :: Investment"
+]
 
 [tool.poetry.dependencies]
 python = "^3.9"
