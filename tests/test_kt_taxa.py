@@ -3,7 +3,7 @@ from kt_taxa import kt_taxa
 
 
 def test_version():
-    assert __version__ == "0.1.0"
+    assert __version__ == "0.2.0"
 
 
 def test_calcula_o_risco():

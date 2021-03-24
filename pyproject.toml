@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "kt-taxa"
-version = "0.1.1"
+version = "0.2.0"
 description = "Calcula a taxa da venda coberta"
 authors = ["Valmir Franca <vfranca3@gmail.com>"]
 license = "GPL-2.0-only"
