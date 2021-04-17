@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "kt-taxa"
-version = "0.2.0"
+version = "0.3.0"
 description = "Calcula a taxa da venda coberta"
 authors = ["Valmir Franca <vfranca3@gmail.com>"]
 license = "GPL-2.0-only"
@@ -25,6 +25,7 @@ click = "^7.1.2"
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
 black = "^20.8b1"
+mock = "^4.0.3"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]

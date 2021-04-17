@@ -8,16 +8,18 @@ import click
 
 @click.command()
 @click.argument("premio", type=float, required=False)
-@click.argument("preco", type=float, required=False)
+@click.argument("strike", type=float, required=False)
+@click.argument("cotacao", type=float, required=False)
 @click.option("--version", is_flag=True, help="Exibe a versao")
-def cli(premio, preco, version):
-    """Calcula a taxa da venda coberta."""
+def cli(premio, strike, cotacao, version):
+    """Calcula a taxa de financiamento no exercício de uma operação de venda coberta."""
     if version:
         click.echo("kt-taxa %s" % __version__)
         return 0
     if not premio:
-        click.echo("Usage: tx [OPTIONS] [PREMIO] [PRECO]")
+        click.echo("Usage: tx [OPTIONS] [PREMIO] [STRIKE] [COTACAO]")
         return 0
-    risco = kt_taxa.risco(premio, preco)
-    taxa = kt_taxa.taxa(premio, risco)
+    aquisicao = kt_taxa.aquisicao_exercicio(premio, cotacao)
+    lucro = kt_taxa.lucro_exercicio(strike, aquisicao)
+    taxa = kt_taxa.taxa_exercicio(aquisicao, lucro)
     click.echo("%.2f%%" % taxa)
