@@ -25,3 +25,5 @@ tx 0.61 27.18 26.06
 6.80%
 ```
 Uma venda coberta com uma call com prêmio de R$ 0,61, strike em R$ 27,18 e cujo ativo está cotado em R$ 26,06 na montagem da operação, retorna uma taxa de financiamento no exercício de 6,80%.  
+Opções:  
+--aquisicao-descontada, -ad Aquisição com desconto no exercício.  
